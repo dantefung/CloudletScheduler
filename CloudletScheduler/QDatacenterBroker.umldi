@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_3BTQARDYEeWc0NNPeIPRsw" activeDiagram="_3BePIBDYEeWc0NNPeIPRsw">
+  <model href="QDatacenterBroker.uml#_qb8akM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_3BePIBDYEeWc0NNPeIPRsw" position="0,0" size="100,100" name="QDatacenterBroker" viewport="0,106">
+    <property xmi:id="_3yUdQBDYEeWc0NNPeIPRsw" key="pageFormatName" value="A4"/>
+    <property xmi:id="_3yUdQRDYEeWc0NNPeIPRsw" key="diagramWidth" value="840"/>
+    <property xmi:id="_3yUdQhDYEeWc0NNPeIPRsw" key="diagramHeight" value="1188"/>
+    <property xmi:id="_3yUdQxDYEeWc0NNPeIPRsw" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_3yUdRBDYEeWc0NNPeIPRsw" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_3yUdRRDYEeWc0NNPeIPRsw" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_3yUdRhDYEeWc0NNPeIPRsw" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_3yUdRxDYEeWc0NNPeIPRsw" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_3yUdSBDYEeWc0NNPeIPRsw" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_3Be2MBDYEeWc0NNPeIPRsw" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="QDatacenterBroker.uml#_qb8akM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_EQenEBDZEeWc0NNPeIPRsw" position="35,35" size="683,642">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_EQenERDZEeWc0NNPeIPRsw">
+        <element href="QDatacenterBroker.uml#_B4Kr4BDZEeWc0NNPeIPRsw"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_ESgnYBDZEeWc0NNPeIPRsw" position="15,11" size="653,581">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESgnYRDZEeWc0NNPeIPRsw">
+          <element href="QDatacenterBroker.uml#_B4RZkBDZEeWc0NNPeIPRsw"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_ESh1gBDZEeWc0NNPeIPRsw" position="15,11" size="623,520">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESh1gRDZEeWc0NNPeIPRsw">
+            <element href="QDatacenterBroker.uml#_B4RZkRDZEeWc0NNPeIPRsw"/>
+          </semanticModel>
+          <contained xsi:type="di:GraphNode" xmi:id="_ESkRwBDZEeWc0NNPeIPRsw" position="15,11" size="593,-1">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkRwRDZEeWc0NNPeIPRsw">
+              <element href="QDatacenterBroker.uml#_B4SAoBDZEeWc0NNPeIPRsw"/>
+            </semanticModel>
+            <contained xsi:type="di:GraphNode" xmi:id="_ESkRwhDZEeWc0NNPeIPRsw">
+              <property xmi:id="_ESkRwxDZEeWc0NNPeIPRsw" key="eStructuralFeatureID" value="37"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkRxBDZEeWc0NNPeIPRsw">
+                <element href="QDatacenterBroker.uml#_B4SAoBDZEeWc0NNPeIPRsw"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkRxRDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkRxhDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_CezOEBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkRxxDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkRyBDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_Ce8YABDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkRyRDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkRyhDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_Cp_KYBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkRyxDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkRzBDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_CqF4EBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkRzRDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkRzhDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_CqMlwBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkRzxDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR0BDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_CqTTcBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR0RDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR0hDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_CqaBIBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR0xDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR1BDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1OKABDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR1RDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR1hDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1SbcBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR1xDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR2BDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1YiEBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_ESkR2RDZEeWc0NNPeIPRsw">
+              <property xmi:id="_ESkR2hDZEeWc0NNPeIPRsw" key="eStructuralFeatureID" value="47"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR2xDZEeWc0NNPeIPRsw">
+                <element href="QDatacenterBroker.uml#_B4SAoBDZEeWc0NNPeIPRsw"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR3BDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR3RDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1lWYBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR3hDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR3xDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1oZsBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR4BDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR4RDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1sEEBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR4hDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR4xDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1vucBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR5BDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR5RDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_C1zY0BDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR5hDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR5xDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DAlFcBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR6BDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR6RDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DAnhsBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR6hDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR6xDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DArMEBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR7BDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR7RDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DAvdgBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR7hDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR7xDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DAzH4BDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR8BDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR8RDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DA2yQBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR8hDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR8xDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DA6coBDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_ESkR9BDZEeWc0NNPeIPRsw" position="422,151">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ESkR9RDZEeWc0NNPeIPRsw">
+                  <element href="QDatacenterBroker.uml#_DA-HABDZEeWc0NNPeIPRsw"/>
+                </semanticModel>
+              </contained>
+            </contained>
+          </contained>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

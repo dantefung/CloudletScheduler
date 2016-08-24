@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="QDatacenterBroker">
+  <packagedElement xmi:type="uml:Package" xmi:id="_B4Kr4BDZEeWc0NNPeIPRsw" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_B4RZkBDZEeWc0NNPeIPRsw" name="cloudbus">
+      <packagedElement xmi:type="uml:Package" xmi:id="_B4RZkRDZEeWc0NNPeIPRsw" name="cloudsim">
+        <packagedElement xmi:type="uml:Class" xmi:id="_B4SAoBDZEeWc0NNPeIPRsw" name="QDatacenterBroker">
+          <generalization xmi:id="_CeuVkBDZEeWc0NNPeIPRsw" general="_CetugBDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_CezOEBDZEeWc0NNPeIPRsw" name="vmCloudletAssigner" visibility="private" type="_Ceu8oBDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_Ce8YABDZEeWc0NNPeIPRsw" name="CREATE_CLOUDLETS" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Ce8YARDZEeWc0NNPeIPRsw" value="49"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Cp_KYBDZEeWc0NNPeIPRsw" name="delayList" visibility="private" isStatic="true" type="_Cp9VMBDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_CqF4EBDZEeWc0NNPeIPRsw" name="numLetList" visibility="private" isStatic="true" type="_CqCNsBDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_CqMlwBDZEeWc0NNPeIPRsw" name="currWave" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CqTTcBDZEeWc0NNPeIPRsw" name="numlets" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CqaBIBDZEeWc0NNPeIPRsw" name="numVm" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_C1OKABDZEeWc0NNPeIPRsw" name="lambda" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_C1SbcBDZEeWc0NNPeIPRsw" name="numletWaveInterval" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_C1YiEBDZEeWc0NNPeIPRsw" name="cloudletWaitingQueueLength" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_C1lWYBDZEeWc0NNPeIPRsw" name="processOtherEvent" visibility="public">
+            <ownedParameter xmi:id="_C1lWYRDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_C1oZsBDZEeWc0NNPeIPRsw" name="startEntity" visibility="public"/>
+          <ownedOperation xmi:id="_C1sEEBDZEeWc0NNPeIPRsw" name="submitCloudlets" visibility="protected"/>
+          <ownedOperation xmi:id="_C1vucBDZEeWc0NNPeIPRsw" name="processCloudletReturn" visibility="protected">
+            <ownedParameter xmi:id="_C1vucRDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_C1zY0BDZEeWc0NNPeIPRsw" name="cloudletSubmitFailed" visibility="protected">
+            <ownedParameter xmi:id="_C1zY0RDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DAlFcBDZEeWc0NNPeIPRsw" name="getVmCloudletAssigner" visibility="public">
+            <ownedParameter xmi:id="_DAlFcRDZEeWc0NNPeIPRsw" name="return" type="_Ceu8oBDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DAnhsBDZEeWc0NNPeIPRsw" name="setVmCloudletAssigner" visibility="public">
+            <ownedParameter xmi:id="_DAnhsRDZEeWc0NNPeIPRsw" name="vmCloudletAssigner" type="_Ceu8oBDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DArMEBDZEeWc0NNPeIPRsw" name="createVM" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_DArMERDZEeWc0NNPeIPRsw" name="userId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DArMEhDZEeWc0NNPeIPRsw" name="vms">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DArMExDZEeWc0NNPeIPRsw" name="idShift">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DArMFBDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DAvdgBDZEeWc0NNPeIPRsw" name="createCloudlet" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_DAvdgRDZEeWc0NNPeIPRsw" name="userId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DAvdghDZEeWc0NNPeIPRsw" name="cloudlets">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DAvdgxDZEeWc0NNPeIPRsw" name="idShift">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DAvdhBDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DAzH4BDZEeWc0NNPeIPRsw" name="f_Poisson" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_DAzH4RDZEeWc0NNPeIPRsw" name="lambda">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DAzH4hDZEeWc0NNPeIPRsw" name="k">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DAzH4xDZEeWc0NNPeIPRsw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DA2yQBDZEeWc0NNPeIPRsw" name="createCloudletWave" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_DA3ZUBDZEeWc0NNPeIPRsw" name="numlets">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DA3ZURDZEeWc0NNPeIPRsw" name="lambda">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DA3ZUhDZEeWc0NNPeIPRsw" name="numletWaveInterval">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DA6coBDZEeWc0NNPeIPRsw" name="getNumLetList" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_DA6coRDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DA-HABDZEeWc0NNPeIPRsw" name="setNumLetList" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_DA-HARDZEeWc0NNPeIPRsw" name="numLetList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Cay30RDZEeWc0NNPeIPRsw" name="core">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Cay30hDZEeWc0NNPeIPRsw" name="CloudSim"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Cay30xDZEeWc0NNPeIPRsw" name="CloudSimTags"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Cay31BDZEeWc0NNPeIPRsw" name="SimEvent"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Cay31RDZEeWc0NNPeIPRsw" name="lists">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Cay31hDZEeWc0NNPeIPRsw" name="VmList"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CetugBDZEeWc0NNPeIPRsw" name="DatacenterBroker">
+          <generalization xmi:id="_DkMv4xDZEeWc0NNPeIPRsw" general="_DkMv4hDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkNW8hDZEeWc0NNPeIPRsw" name="vmList" visibility="protected" type="_DkNW8RDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkNW8xDZEeWc0NNPeIPRsw" name="vmsCreatedList" visibility="protected" type="_DkNW8RDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkN-ARDZEeWc0NNPeIPRsw" name="cloudletList" visibility="protected" type="_DkN-ABDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkN-AhDZEeWc0NNPeIPRsw" name="cloudletSubmittedList" visibility="protected" type="_DkN-ABDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkOlEBDZEeWc0NNPeIPRsw" name="cloudletReceivedList" visibility="protected" type="_DkN-ABDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkOlERDZEeWc0NNPeIPRsw" name="cloudletsSubmitted" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_DkOlEhDZEeWc0NNPeIPRsw" name="vmsRequested" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_DkOlExDZEeWc0NNPeIPRsw" name="vmsAcks" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_DkPMIBDZEeWc0NNPeIPRsw" name="vmsDestroyed" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_DkPMJBDZEeWc0NNPeIPRsw" name="datacenterIdsList" visibility="protected" type="_DkPMIxDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkPzMBDZEeWc0NNPeIPRsw" name="datacenterRequestedIdsList" visibility="protected" type="_DkPMIxDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkQaQxDZEeWc0NNPeIPRsw" name="vmsToDatacentersMap" visibility="protected" type="_DkQaQhDZEeWc0NNPeIPRsw"/>
+          <ownedAttribute xmi:id="_DkRBUxDZEeWc0NNPeIPRsw" name="datacenterCharacteristicsList" visibility="protected" type="_DkRBUhDZEeWc0NNPeIPRsw"/>
+          <ownedOperation xmi:id="_DkS2gBDZEeWc0NNPeIPRsw" name="submitVmList" visibility="public">
+            <ownedParameter xmi:id="_DkS2gRDZEeWc0NNPeIPRsw" name="list" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkTdkBDZEeWc0NNPeIPRsw" name="submitCloudletList" visibility="public">
+            <ownedParameter xmi:id="_DkTdkRDZEeWc0NNPeIPRsw" name="list" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkUEoBDZEeWc0NNPeIPRsw" name="bindCloudletToVm" visibility="public">
+            <ownedParameter xmi:id="_DkUEoRDZEeWc0NNPeIPRsw" name="cloudletId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_DkUEohDZEeWc0NNPeIPRsw" name="vmId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkVSwBDZEeWc0NNPeIPRsw" name="processEvent" visibility="public">
+            <ownedParameter xmi:id="_DkVSwRDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkV50BDZEeWc0NNPeIPRsw" name="processResourceCharacteristics" visibility="protected">
+            <ownedParameter xmi:id="_DkV50RDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkWg4BDZEeWc0NNPeIPRsw" name="processResourceCharacteristicsRequest" visibility="protected">
+            <ownedParameter xmi:id="_DkWg4RDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkXH8BDZEeWc0NNPeIPRsw" name="processVmCreate" visibility="protected">
+            <ownedParameter xmi:id="_DkXH8RDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkXvABDZEeWc0NNPeIPRsw" name="processCloudletReturn" visibility="protected">
+            <ownedParameter xmi:id="_DkXvARDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkYWEBDZEeWc0NNPeIPRsw" name="processOtherEvent" visibility="protected">
+            <ownedParameter xmi:id="_DkYWERDZEeWc0NNPeIPRsw" name="ev" type="_Cay31BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkY9IBDZEeWc0NNPeIPRsw" name="createVmsInDatacenter" visibility="protected">
+            <ownedParameter xmi:id="_DkY9IRDZEeWc0NNPeIPRsw" name="datacenterId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DkY9IhDZEeWc0NNPeIPRsw" name="submitCloudlets" visibility="protected"/>
+          <ownedOperation xmi:id="_DkZkMBDZEeWc0NNPeIPRsw" name="clearDatacenters" visibility="protected"/>
+          <ownedOperation xmi:id="_DkaLQBDZEeWc0NNPeIPRsw" name="finishExecution" visibility="protected"/>
+          <ownedOperation xmi:id="_DkaLQRDZEeWc0NNPeIPRsw" name="shutdownEntity" visibility="public"/>
+          <ownedOperation xmi:id="_DkayUBDZEeWc0NNPeIPRsw" name="startEntity" visibility="public"/>
+          <ownedOperation xmi:id="_DknmoBDZEeWc0NNPeIPRsw" name="getVmList" visibility="public">
+            <ownedParameter xmi:id="_DknmoRDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+            <ownedTemplateSignature xmi:id="_DknmohDZEeWc0NNPeIPRsw" parameter="_DknmoxDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_DknmoxDZEeWc0NNPeIPRsw" parameteredElement="_DknmpBDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_DknmpBDZEeWc0NNPeIPRsw" name="T" templateParameter="_DknmoxDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dko0wBDZEeWc0NNPeIPRsw" name="setVmList" visibility="protected">
+            <ownedParameter xmi:id="_Dko0wRDZEeWc0NNPeIPRsw" name="vmList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+            <ownedTemplateSignature xmi:id="_Dko0whDZEeWc0NNPeIPRsw" parameter="_Dko0wxDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Dko0wxDZEeWc0NNPeIPRsw" parameteredElement="_Dko0xBDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Dko0xBDZEeWc0NNPeIPRsw" name="T" templateParameter="_Dko0wxDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dko0xRDZEeWc0NNPeIPRsw" name="getCloudletList" visibility="public">
+            <ownedParameter xmi:id="_Dko0xhDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+            <ownedTemplateSignature xmi:id="_Dko0xxDZEeWc0NNPeIPRsw" parameter="_Dko0yBDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Dko0yBDZEeWc0NNPeIPRsw" parameteredElement="_Dko0yRDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Dko0yRDZEeWc0NNPeIPRsw" name="T" templateParameter="_Dko0yBDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dvc9oBDZEeWc0NNPeIPRsw" name="setCloudletList" visibility="protected">
+            <ownedParameter xmi:id="_Dvc9oRDZEeWc0NNPeIPRsw" name="cloudletList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+            <ownedTemplateSignature xmi:id="_Dvc9ohDZEeWc0NNPeIPRsw" parameter="_Dvc9oxDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Dvc9oxDZEeWc0NNPeIPRsw" parameteredElement="_Dvc9pBDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Dvc9pBDZEeWc0NNPeIPRsw" name="T" templateParameter="_Dvc9oxDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvdksBDZEeWc0NNPeIPRsw" name="getCloudletSubmittedList" visibility="public">
+            <ownedParameter xmi:id="_DvdksRDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+            <ownedTemplateSignature xmi:id="_DvdkshDZEeWc0NNPeIPRsw" parameter="_DvdksxDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_DvdksxDZEeWc0NNPeIPRsw" parameteredElement="_DvdktBDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_DvdktBDZEeWc0NNPeIPRsw" name="T" templateParameter="_DvdksxDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DveLwBDZEeWc0NNPeIPRsw" name="setCloudletSubmittedList" visibility="protected">
+            <ownedParameter xmi:id="_DveLwRDZEeWc0NNPeIPRsw" name="cloudletSubmittedList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+            <ownedTemplateSignature xmi:id="_DveLwhDZEeWc0NNPeIPRsw" parameter="_DveLwxDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_DveLwxDZEeWc0NNPeIPRsw" parameteredElement="_DveLxBDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_DveLxBDZEeWc0NNPeIPRsw" name="T" templateParameter="_DveLwxDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dvey0BDZEeWc0NNPeIPRsw" name="getCloudletReceivedList" visibility="public">
+            <ownedParameter xmi:id="_Dvey0RDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+            <ownedTemplateSignature xmi:id="_Dvey0hDZEeWc0NNPeIPRsw" parameter="_Dvey0xDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Dvey0xDZEeWc0NNPeIPRsw" parameteredElement="_Dvey1BDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Dvey1BDZEeWc0NNPeIPRsw" name="T" templateParameter="_Dvey0xDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvfZ4BDZEeWc0NNPeIPRsw" name="setCloudletReceivedList" visibility="protected">
+            <ownedParameter xmi:id="_DvfZ4RDZEeWc0NNPeIPRsw" name="cloudletReceivedList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+            <ownedTemplateSignature xmi:id="_DvfZ4hDZEeWc0NNPeIPRsw" parameter="_DvfZ4xDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_DvfZ4xDZEeWc0NNPeIPRsw" parameteredElement="_DvfZ5BDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_DvfZ5BDZEeWc0NNPeIPRsw" name="T" templateParameter="_DvfZ4xDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvfZ5RDZEeWc0NNPeIPRsw" name="getVmsCreatedList" visibility="public">
+            <ownedParameter xmi:id="_DvfZ5hDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+            <ownedTemplateSignature xmi:id="_DvfZ5xDZEeWc0NNPeIPRsw" parameter="_DvfZ6BDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_DvfZ6BDZEeWc0NNPeIPRsw" parameteredElement="_DvfZ6RDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_DvfZ6RDZEeWc0NNPeIPRsw" name="T" templateParameter="_DvfZ6BDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvgA8BDZEeWc0NNPeIPRsw" name="setVmsCreatedList" visibility="protected">
+            <ownedParameter xmi:id="_DvgA8RDZEeWc0NNPeIPRsw" name="vmsCreatedList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+            <ownedTemplateSignature xmi:id="_DvgA8hDZEeWc0NNPeIPRsw" parameter="_DvgA8xDZEeWc0NNPeIPRsw">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_DvgA8xDZEeWc0NNPeIPRsw" parameteredElement="_DvgA9BDZEeWc0NNPeIPRsw">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_DvgA9BDZEeWc0NNPeIPRsw" name="T" templateParameter="_DvgA8xDZEeWc0NNPeIPRsw"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvgoABDZEeWc0NNPeIPRsw" name="getVmsRequested" visibility="protected">
+            <ownedParameter xmi:id="_DvgoARDZEeWc0NNPeIPRsw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvhPEBDZEeWc0NNPeIPRsw" name="setVmsRequested" visibility="protected">
+            <ownedParameter xmi:id="_DvhPERDZEeWc0NNPeIPRsw" name="vmsRequested">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvhPEhDZEeWc0NNPeIPRsw" name="getVmsAcks" visibility="protected">
+            <ownedParameter xmi:id="_DvhPExDZEeWc0NNPeIPRsw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dvh2IBDZEeWc0NNPeIPRsw" name="setVmsAcks" visibility="protected">
+            <ownedParameter xmi:id="_Dvh2IRDZEeWc0NNPeIPRsw" name="vmsAcks">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dvh2IhDZEeWc0NNPeIPRsw" name="incrementVmsAcks" visibility="protected"/>
+          <ownedOperation xmi:id="_DvidMBDZEeWc0NNPeIPRsw" name="getVmsDestroyed" visibility="protected">
+            <ownedParameter xmi:id="_DvidMRDZEeWc0NNPeIPRsw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvjEQBDZEeWc0NNPeIPRsw" name="setVmsDestroyed" visibility="protected">
+            <ownedParameter xmi:id="_DvjEQRDZEeWc0NNPeIPRsw" name="vmsDestroyed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvjrUBDZEeWc0NNPeIPRsw" name="getDatacenterIdsList" visibility="protected">
+            <ownedParameter xmi:id="_DvjrURDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvkSYBDZEeWc0NNPeIPRsw" name="setDatacenterIdsList" visibility="protected">
+            <ownedParameter xmi:id="_DvkSYRDZEeWc0NNPeIPRsw" name="datacenterIdsList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dvk5cRDZEeWc0NNPeIPRsw" name="getVmsToDatacentersMap" visibility="protected">
+            <ownedParameter xmi:id="_Dvk5chDZEeWc0NNPeIPRsw" name="return" type="_Dvk5cBDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvmHkBDZEeWc0NNPeIPRsw" name="setVmsToDatacentersMap" visibility="protected">
+            <ownedParameter xmi:id="_DvmHkRDZEeWc0NNPeIPRsw" name="vmsToDatacentersMap" type="_Dvk5cBDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvmuoBDZEeWc0NNPeIPRsw" name="getDatacenterCharacteristicsList" visibility="protected">
+            <ownedParameter xmi:id="_DvmuoRDZEeWc0NNPeIPRsw" name="return" type="_Dvk5cBDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvnVsBDZEeWc0NNPeIPRsw" name="setDatacenterCharacteristicsList" visibility="protected">
+            <ownedParameter xmi:id="_DvnVsRDZEeWc0NNPeIPRsw" name="datacenterCharacteristicsList" type="_Dvk5cBDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Dvn8wBDZEeWc0NNPeIPRsw" name="getDatacenterRequestedIdsList" visibility="protected">
+            <ownedParameter xmi:id="_Dvn8wRDZEeWc0NNPeIPRsw" name="return" type="_Cay30BDZEeWc0NNPeIPRsw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_DvpK4BDZEeWc0NNPeIPRsw" name="setDatacenterRequestedIdsList" visibility="protected">
+            <ownedParameter xmi:id="_DvpK4RDZEeWc0NNPeIPRsw" name="datacenterRequestedIdsList" type="_Cay30BDZEeWc0NNPeIPRsw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_DkMI0BDZEeWc0NNPeIPRsw" name="org">
+          <packagedElement xmi:type="uml:Package" xmi:id="_DkMI0RDZEeWc0NNPeIPRsw" name="cloudbus">
+            <packagedElement xmi:type="uml:Package" xmi:id="_DkMv4BDZEeWc0NNPeIPRsw" name="cloudsim">
+              <packagedElement xmi:type="uml:Package" xmi:id="_DkMv4RDZEeWc0NNPeIPRsw" name="core">
+                <packagedElement xmi:type="uml:Class" xmi:id="_DkMv4hDZEeWc0NNPeIPRsw" name="SimEntity"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CPdxkBDZEeWc0NNPeIPRsw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CPdxkRDZEeWc0NNPeIPRsw" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CayQwBDZEeWc0NNPeIPRsw" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CayQwRDZEeWc0NNPeIPRsw" name="LinkedList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Cay30BDZEeWc0NNPeIPRsw" name="List"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DkMv5BDZEeWc0NNPeIPRsw" name="List&lt;? extends org">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DkMv5RDZEeWc0NNPeIPRsw" name="cloudbus">
+          <packagedElement xmi:type="uml:Package" xmi:id="_DkNW8BDZEeWc0NNPeIPRsw" name="cloudsim">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_DkNW8RDZEeWc0NNPeIPRsw" name="Vm>"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_DkN-ABDZEeWc0NNPeIPRsw" name="Cloudlet>"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DkPMIRDZEeWc0NNPeIPRsw" name="List&lt;java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DkPMIhDZEeWc0NNPeIPRsw" name="lang">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_DkPMIxDZEeWc0NNPeIPRsw" name="Integer>"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DkPzMRDZEeWc0NNPeIPRsw" name="Map&lt;java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DkPzMhDZEeWc0NNPeIPRsw" name="lang">
+          <packagedElement xmi:type="uml:Package" xmi:id="_DkQaQBDZEeWc0NNPeIPRsw" name="Integer,java">
+            <packagedElement xmi:type="uml:Package" xmi:id="_DkQaQRDZEeWc0NNPeIPRsw" name="lang">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_DkQaQhDZEeWc0NNPeIPRsw" name="Integer>"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_DkQaRBDZEeWc0NNPeIPRsw" name="Integer,org">
+            <packagedElement xmi:type="uml:Package" xmi:id="_DkRBUBDZEeWc0NNPeIPRsw" name="cloudbus">
+              <packagedElement xmi:type="uml:Package" xmi:id="_DkRBURDZEeWc0NNPeIPRsw" name="cloudsim">
+                <packagedElement xmi:type="uml:DataType" xmi:id="_DkRBUhDZEeWc0NNPeIPRsw" name="DatacenterCharacteristics>"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Dvk5cBDZEeWc0NNPeIPRsw" name="Map"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_Ceu8oBDZEeWc0NNPeIPRsw" name="VmCloudletAssigner"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_Cp9VMBDZEeWc0NNPeIPRsw" name="List&lt;Double>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_CqCNsBDZEeWc0NNPeIPRsw" name="List&lt;Integer>"/>
+</uml:Model>
